@@ -1,3 +1,7 @@
+The origin source code has been modified to add the following features:
+- Protect your service page
+- Login and logout
+
 # Complete React Starter Template
 
 Starter template based on **[Vite](https://vitejs.dev/guide/)** incl. **all technologies** you need. If you work with Visual Studio Code, install the **[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)** extension for a better experience.
