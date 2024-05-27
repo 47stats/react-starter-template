@@ -3,6 +3,12 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
 const screens = defaultTheme.screens;
 
+delete colors['lightBlue'];
+delete colors['warmGray'];
+delete colors['trueGray'];
+delete colors['coolGray'];
+delete colors['blueGray'];
+
 /**
  * A guide to configuring and customizing your Tailwind installation
  * https://tailwindcss.com/docs/configuration

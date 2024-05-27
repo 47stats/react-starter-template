@@ -9,4 +9,5 @@ export { default as Pricing } from './Pricing';
 export { default as About } from './About';
 export { default as Contact } from './Contact';
 export { default as Policy } from './Policy';
+export { default as Login } from './Login';
 export { default as NotFound } from './NotFound';

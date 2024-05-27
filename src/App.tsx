@@ -5,6 +5,9 @@ import * as Pages from './pages/_index';
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 
+import PublicLayout from "./layout/PublicLayout";
+import PrivateLayout from "./layout/PrivateLayout";
+
 export default function App() {
 	const { i18n } = useTranslation();
 	useEffect(() => {
@@ -33,34 +36,43 @@ export default function App() {
 			<NavBar />
 
 			<Routes>
-				<Route
-					path='/'
-					element={<Pages.Home />}
-				/>
-				<Route
-					path='services'
-					element={<Pages.Services />}
-				/>
-				<Route
-					path='pricing'
-					element={<Pages.Pricing />}
-				/>
-				<Route
-					path='about'
-					element={<Pages.About />}
-				/>
-				<Route
-					path='contact'
-					element={<Pages.Contact />}
-				/>
-				<Route
-					path='policy'
-					element={<Pages.Policy />}
-				/>
-				<Route
-					path='*'
-					element={<Pages.NotFound />}
-				/>
+				<Route element={<PublicLayout />}>
+					<Route
+						path='/'
+						element={<Pages.Home />}
+					/>
+					<Route
+						path='pricing'
+						element={<Pages.Pricing />}
+					/>
+					<Route
+						path='about'
+						element={<Pages.About />}
+					/>
+					<Route
+						path='contact'
+						element={<Pages.Contact />}
+					/>
+					<Route
+						path='policy'
+						element={<Pages.Policy />}
+					/>
+					<Route
+						path='login'
+						element={<Pages.Login />}
+					/>
+					<Route
+						path='*'
+						element={<Pages.NotFound />}
+					/>
+				</Route>
+				<Route element={<PrivateLayout />}>
+					<Route
+						path='services'
+						element={<Pages.Services />}
+					/>
+				</Route>
+
 			</Routes>
 
 			<Footer />

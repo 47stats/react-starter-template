@@ -13,6 +13,11 @@ export default function NavBar() {
   const navigation = [
     { label: t("nav.home"), path: "/", icon: "fluent:home-12-regular" },
     {
+      label: t("nav.services"),
+      path: "/services",
+      icon: "fluent:money-24-regular",
+    },
+    {
       label: t("nav.prices"),
       path: "/pricing",
       icon: "fluent:money-24-regular",
