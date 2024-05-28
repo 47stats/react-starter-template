@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
   // call this function when you want to authenticate the user
   const login = async (data: User) => {
     setUser(data);
-    navigate("/services");
+    navigate("/services", { replace: true });
   };
 
   // call this function to sign out logged in user

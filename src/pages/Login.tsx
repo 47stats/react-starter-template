@@ -19,7 +19,7 @@ function Login() {
 			<section className='py-14'>
 				<h3 className='text-gray-800 text-3xl font-semibold sm:text-4xl'>Login</h3>
 			</section>
-          <button onClick={handleButton}>ログイン</button>
+          <button onClick={handleButton}>Login</button>
 		</div>
 	);
 }

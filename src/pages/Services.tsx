@@ -18,7 +18,7 @@ export default function Services() {
 						<p>{openingHours[0]['dayOfWeek']}</p>
 						<p>{import.meta.env.VITE_ADDRESS_STREET}</p>
 					</div>
-          <button onClick={logout}>ログイン</button>
+          <button onClick={logout}>Logout</button>
 				</section>
 			</div>
 		</div>
